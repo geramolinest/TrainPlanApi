@@ -3,7 +3,6 @@ using System.Net;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using TrainPlanApi.Infrastructure.Persistence;
-using TrainPlanApi.Middlewares;
 using TrainPlanApi.Services;
 using TrainPlanApi.Services.Interfaces;
 
@@ -47,12 +46,12 @@ public class Startup
 
     public void Configure(IApplicationBuilder app)
     {
-        //app.UseMiddleware<UnauthorizedMiddleware>();
 
         app.UseHttpsRedirection();
 
         app.UseRouting();
 
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints => endpoints.MapControllers());

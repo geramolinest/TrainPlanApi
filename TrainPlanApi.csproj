@@ -19,4 +19,9 @@
     <PackageReference Include="Scalar.AspNetCore" Version="1.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features/Users/Commands/" />
+    <Folder Include="Features/WorkoutPlan/Queries/" />
+  </ItemGroup>
+
 </Project>
