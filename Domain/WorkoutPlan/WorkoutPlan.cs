@@ -10,4 +10,6 @@ public class WorkoutPlan
     public DateOnly EndDate { get; set; }
     public List<Workout> Workouts { get; set; }
     public IdentityUser IdentityUser { get; set; }
+     public int? WorkoutPlanTypeId { get; set; }
+     public WorkoutPlanType WorkoutPlanType { get; set; }
 }

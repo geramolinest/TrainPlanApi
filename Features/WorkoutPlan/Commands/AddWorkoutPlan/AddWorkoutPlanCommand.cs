@@ -9,8 +9,6 @@ using TrainPlanApi.Domain.Common;
 using TrainPlanApi.Features.WorkoutPlan.Commands.AddWorkoutPlan.Dto;
 using TrainPlanApi.Infrastructure.Persistence;
 using TrainPlanApi.Services.Interfaces;
-using TrainPlanApi.Domain.Workout;
-using TrainPlanApi.Domain.Excercise;
 
 public class AddWorkoutPlanCommand : IRequest<BaseResponse<AddExcerciseWorkoutPlanCommandResponse>>
 {
